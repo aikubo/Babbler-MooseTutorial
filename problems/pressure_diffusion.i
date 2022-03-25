@@ -20,6 +20,9 @@
   [diffusion]
     type = DarcyPressure # ADDiffusion # Laplacian operator
     variable = pressure # Operate on the "pressure" variable from above
+    permeability=0.8451e-09 #(m^2) assumed permeability of the porous medium
+    #previously permeability was hard coded in DarcyPressure.C now it is set
+    # in the input file after being defined by InputParameters
   []
 []
 [BCs]
